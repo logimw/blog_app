@@ -8,7 +8,7 @@ const navLinks = [
 
 const Home = ({ children }) => {
   return (
-    <div className="p-10 font-mono">
+    <div className="p-10 font-mono max-w-screen-xl mx-auto">
       <nav className="bg-blue-400 p-5 flex justify-center">
         {navLinks.map((link) => (
           <Link href={link.path} key={link.id}>
@@ -20,7 +20,7 @@ const Home = ({ children }) => {
       </nav>
       <main className="bg-gray-100 p-5">{children}</main>
       <footer className="bg-blue-400 p-5 text-gray-100 text-center">
-        {new Date().getFullYear()}
+        &copy; {new Date().getFullYear()}
       </footer>
     </div>
   );
