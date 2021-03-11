@@ -1,14 +1,15 @@
 import Layout from "component/layout";
 import Head from "next/head";
-const Home = () => {
+const About = () => {
   return (
     <Layout>
+      {" "}
       <Head>
-        <title>Blog - recent posts</title>
+        <title>Blog - about</title>
       </Head>
-      <p>Tresć</p>
+      About
     </Layout>
   );
 };
 
-export default Home;
+export default About;
